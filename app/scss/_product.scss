@@ -391,10 +391,30 @@
     left: -3%;
     top: -10px;
     width: min-content;
-    font: 14px;
+
     line-height: 17px;
     padding: 4px 9px;
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.14);
+}
+@media (max-width: 500px){
+    .product__sliderval{
+        font-size: 14px;
+        padding: 4px;
+        left: -5%;
+    }
+    .product__priceslider{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .productconstruct__breakpoint:first-child {
+        left: -14px;
+    }
+    .productconstruct__breakpoint:last-child {
+        right: -22px;
+    }
+    .product__low-text, .product__low-title{
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 500px) {

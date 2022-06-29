@@ -75,23 +75,43 @@ let recentVal = 0, comp = 0
 
     var sliderval = document.querySelector(".product__sliderval")
     if(sliderval.style.left == ""){
-      sliderval.style.left = "-3%"
+      if(window.innerWidth <= 500){
+        sliderval.style.left = "-5%"
+      }
+      else{
+        sliderval.style.left = "-3%"
+      }
+
     }
     if(val>recentVal){
       console.log(parseFloat(val))
+      if(window.innerWidth <= 500){
+        sliderval.style.left = parseFloat(sliderval.style.left) +16.2667*Math.abs(val-recentVal)+comp + "%"
+        sliderval.innerHTML = 310*(val+1)
+      }
+      else{
+        sliderval.style.left = parseFloat(sliderval.style.left) +16.6667*Math.abs(val-recentVal)+comp + "%"
+        sliderval.innerHTML = 310*(val+1)
+      }
       // if(val == 1){
       //   comp = 3
       // }
-      sliderval.style.left = parseFloat(sliderval.style.left) +16.6667*Math.abs(val-recentVal)+comp + "%"
-      sliderval.innerHTML = 310*(val+1)
+
     }
     if(val<recentVal){
       // if(val == 0){
       //   comp = 3
       // }
-      console.log(parseFloat(val))
-      sliderval.style.left = parseFloat(sliderval.style.left) -16.6667*Math.abs(val-recentVal)+comp + "%"
-      sliderval.innerHTML = 310*(val+1)
+      if(window.innerWidth <= 500){
+        sliderval.style.left = parseFloat(sliderval.style.left) -16.2667*Math.abs(val-recentVal)+comp + "%"
+        sliderval.innerHTML = 310*(val+1)
+      }
+      else{
+        console.log(parseFloat(val))
+        sliderval.style.left = parseFloat(sliderval.style.left) -16.6667*Math.abs(val-recentVal)+comp + "%"
+        sliderval.innerHTML = 310*(val+1)
+      }
+
     }
     recentVal = val
     comp = 0
