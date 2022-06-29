@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@200;400;500;600;700&family=PT+Sans:wght@400;700&family=Roboto:wght@400;700;900&family=The+Nautigal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" rel="stylesheet" >
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container__header">
+        <header class="header">
+            <div class="header__top">
+                <div class="header__burger"></div>
+                <a class="header__logo" href="index.html"><img src="/imgs/logo.png" alt=""></a>
+
+                <div class="header__search">
+                    <input type="text" class="header__search-bar" placeholder="Поиск">
+                    <input class="header__search-btn" type="button">
+                    <input class="header__search-close" type="button">
+                </div>
+
+                <div class="header__city"><p>Алматы</p></div>
+                <div class="header__telephone"><p>+7 (7272) 00 14 33</p></div>
+                <div class="header__call"><button type="button">Заказать звонок</button><div class="header__teleicon"></div></div>
+                <div class="header__authcart">
+                    <div class="header__auth"><a href="#"></a></div>
+                    <div class="header__cart"><a href="#"></a><p>5</p></div>
+                </div>
+                <button type="button" class="header__mobilesearch"></button>
+            </div>
+            <div class="header__bottom">
+                <div class="header__refs">
+                    <a href="">Цветы</a>
+                    <a href="">тип букета</a>
+                    <a href="">Комнатные растения</a>
+                    <a href="">повод</a>
+                    <a href="">подарки</a>
+                    <a href="">уход и пересадка</a>
+                    <a href="">Цена</a>
+                </div>
+                <div class="header__menu ">
+
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container__menu hidden">
+        <main class="main">
+            <div class="menu__content">
+                <div class="menu__content-item">
+                    <a href="#">Оплата</a>
+                    <a href="#">Доставка</a>
+                    <a href="#">Корпоративным клиентам</a>
+                </div>
+                <div class="menu__content-item">
+                    <a href="#">Отзывы</a>
+                    <a href="#">Преимущества</a>
+                </div>
+                <div class="menu__content-item">
+                    <a href="#">О нас</a>
+                    <a href="#">Контакты</a>
+                </div>
+                <div class="menu__content-item">
+                    <a href="#">Оптовый отдел</a>
+                    <a href="#">Договор оферты</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="container__mobilemenu hidden">
+        <div class="mobilemenu__background"></div>
+        <div class="mobilemenu">
+            <div class="mobilemenu__container">
+                <p class="mobilemenu__maintitle">Каталог</p>
+                <div class="mobilemenu__container">
+                    <div class="mobilemenu__item">
+                        <p class="mobilemenu__item-title">Цветы</p>
+                        <div class="mobilemenu__item-container hidden">
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                        </div>
+                    </div>
+                    <div class="mobilemenu__item">
+                        <p class="mobilemenu__item-title">Цветы</p>
+                        <div class="mobilemenu__item-container hidden">
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                        </div>
+                    </div>
+                    <div class="mobilemenu__item">
+                        <p class="mobilemenu__item-title">Цветы</p>
+                        <div class="mobilemenu__item-container hidden">
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                        </div>
+                    </div>
+                    <div class="mobilemenu__item">
+                        <p class="mobilemenu__item-title">Цветы</p>
+                        <div class="mobilemenu__item-container hidden">
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                            <a href="#">Розы</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mobilemenu__info">
+                <p class=" mobilemenu__info-title"><img src="./icns/Bookmark.svg" alt="">Полезная информация</p>
+                <div class="mobilemenu__info-container hidden">
+                    <a href="#">Оплата</a>
+                    <a href="#">Доставка</a>
+                    <a href="#">Корпоративным клиентам</a>
+                    <a href="#">О нас</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Отзывы</a>
+                    <a href="#">Преимущества</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container__main">
+        <main class="main">
+            <div class="main__top">
+                <p class="main__title">Розы</p>
+                <p class="main__breadcrumb">Главная > Цветы > Розы</p>
+                <div class="main__top-item">
+
+                    <div class="main__bottom">
+                        <div class="main__sort">
+                            <p class="main__sort-picked">По умолчанию</p>
+                            <div class="main__sort-container hidden">
+                                <p class="main__sort-item">По популярности</p>
+                                <p class="main__sort-item">По возрастанию цены</p>
+                                <p class="main__sort-item">По убыванию цены</p>
+                            </div>
+
+                        </div>
+                        <div class="cataloglist__mobilefilter"><p>Фильтр</p></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="cataloglist">
+                <div class="cataloglist__filter ">
+                    <div class="cataloglist__filter-top">
+                        <img src="./icns/black-cross.svg" class="cataloglist__filter-close" alt="">
+                        <div class="cataloglist__filter-topcontainer">
+                            <p class="cataloglist__filter-title">Фильтр по параметрам</p>
+                            <button type="button" class="cataloglist__filter-reset">Сбросить</button>
+                        </div>
+
+                    </div>
+
+                    <div class="cataloglist__filter-item cataloglist__filter-first">
+                        <div class="cataloglist__filter-subtitle"><p>Цена</p></div>
+                        <div class="cataloglist__filter-subitem">
+                            <div class="cataloglist__slider-inputs">
+                                <input type="text" id="amount1" readonly >
+                                <input type="text" id="amount2" readonly >
+                            </div>
+                            <div class="cataloglist__slider-numbers">
+                                <input type="text" id="amount3" readonly >
+                                <input type="text" id="amount4" readonly >
+                            </div>
+                              <div id="slider-range"></div>
+                        </div>
+                    </div>
+                    <div class="cataloglist__filter-item">
+                        <div class="cataloglist__filter-subtitle"><p>Тип букета</p></div>
+                        <div class="cataloglist__filter-subitem">
+                            <div class="cataloglist__bouquet">
+                                <p class="cataloglist__bouquet-pickedtype" >Все</p>
+                                <div class="cataloglist__bouquet-container hidden">
+                                    <p class="cataloglist__bouquet-type">Моно-букет</p>
+                                    <p class="cataloglist__bouquet-type">Сборный букет</p>
+                                    <p class="cataloglist__bouquet-type">В коробке</p>
+                                    <p class="cataloglist__bouquet-type">В корзине</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cataloglist__filter-item">
+                        <div class="cataloglist__filter-subtitle"><p>Цвет</p></div>
+                        <div class="cataloglist__filter-subitem">
+                          <div class="cataloglist__filter-input"><input type="checkbox" class="custom-input"><label for="">Красный</label><p>20</p></div>
+                          <div class="cataloglist__filter-input"><input type="checkbox" class="custom-input"><label for="">Красный</label><p>20</p></div>
+                          <div class="cataloglist__filter-input"><input type="checkbox" class="custom-input"><label for="">Красный</label><p>20</p></div>
+                          <div class="cataloglist__filter-input"><input type="checkbox" class="custom-input"><label for="">Красный</label><p>20</p></div>
+                          <div class="cataloglist__filter-input"><input type="checkbox" class="custom-input"><label for="">Красный</label><p>20</p></div>
+                          <div class="cataloglist__filter-input"><input type="checkbox" class="custom-input"><label for="">Красный</label><p>20</p></div>
+                          <div class="cataloglist__filter-input"><input type="checkbox" class="custom-input"><label for="">Красный</label><p>20</p></div>
+                          <div class="cataloglist__filter-input"><input type="checkbox" class="custom-input"><label for="">Красный</label><p>20</p></div>
+                          <div class="cataloglist__filter-input"><input type="checkbox" class="custom-input"><label for="">Красный</label><p>20</p></div>
+                        </div>
+                    </div>
+                    <div class="cataloglist__filter-item">
+                        <div class="cataloglist__filter-subtitle"><p>Цвет</p></div>
+                        <div class="cataloglist__filter-subitem">
+                          <div class="cataloglist__filter-input"><input type="checkbox" class="custom-input"><label for="">Красный</label><p>20</p></div>
+                          <div class="cataloglist__filter-input"><input type="checkbox" class="custom-input"><label for="">Красный</label><p>20</p></div>
+                          <div class="cataloglist__filter-input"><input type="checkbox" class="custom-input"><label for="">Красный</label><p>20</p></div>
+                          <div class="cataloglist__filter-input"><input type="checkbox" class="custom-input"><label for="">Красный</label><p>20</p></div>
+                          <div class="cataloglist__filter-input"><input type="checkbox" class="custom-input"><label for="">Красный</label><p>20</p></div>
+                          <div class="cataloglist__filter-input"><input type="checkbox" class="custom-input"><label for="">Красный</label><p>20</p></div>
+                          <div class="cataloglist__filter-input"><input type="checkbox" class="custom-input"><label for="">Красный</label><p>20</p></div>
+                          <div class="cataloglist__filter-input"><input type="checkbox" class="custom-input"><label for="">Красный</label><p>20</p></div>
+                          <div class="cataloglist__filter-input"><input type="checkbox" class="custom-input"><label for="">Красный</label><p>20</p></div>
+                        </div>
+                    </div>
+                    <div class="cataloglist__filter-bottom">
+                        <button type="button">Показать</button>
+                    </div>
+                </div>
+
+                <div class="cataloglist__content">
+                    <div class="main__cards" data-card="1">
+                        <div class="main__card">
+                            <div class="main__card-img">
+                                <button class="main__card-fav"></button>
+                                <div class="main__card-tags">
+                                    <p class="main__card-tagsweet">Вкусная цена</p>
+                                    <p class="main__card-tagdiscount">10%</p>
+                                    <!-- <p class="main__card-tagsweet"></p> -->
+
+                                </div>
+                                <a href="#"><img src="/imgs/bouquet.png" alt=""></a>
+                            </div>
+                            <div class="main__card-info">
+                                <div class="main__card-desc"><p>Коробка из разных цветов "Название"</p></div>
+                                <div class="main__card-midsection">
+<p class="main__card-counthigh">Много</p><p class="main__card-points"><span>+280  </span>бонус</p></div>
+                                <div class="main__card-bottom">
+                                    <div class="main__card-price">
+                                        <p class="main__card-newprice">24 000 ₸</p>
+                                        <p class="main__card-oldprice">28 000 ₸</p>
+                                    </div>
+                                   <button class="main__card-addcart"><img src="./icns/plus-icon.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__card">
+                            <div class="main__card-img">
+                                <button class="main__card-fav"></button>
+                                <div class="main__card-tags">
+                                    <p class="main__card-tagsweet">Вкусная цена</p>
+                                    <!-- <p class="main__card-tagsweet"></p> -->
+
+                                </div>
+                                <a href="#"><img src="/imgs/bouquet.png" alt=""></a>
+                            </div>
+                            <div class="main__card-info">
+                                <div class="main__card-desc"><p>Коробка из разных цветов "Название"</p></div>
+                                <div class="main__card-midsection">
+<p class="main__card-countmid">много</p><p class="main__card-points"><span>+280  </span>бонус</p>
+</div>
+                                <div class="main__card-bottom">
+                                    <div class="main__card-price">
+                                        <p class="main__card-newprice">24 000 ₸</p>
+                                        <p class="main__card-oldprice">28 000 ₸</p>
+                                    </div>
+                                   <button class="main__card-addcart"><img src="./icns/plus-icon.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__card">
+                            <div class="main__card-img">
+                                <button class="main__card-fav"></button>
+                                <div class="main__card-tags">
+                                    <p class="main__card-tagdiscount">Акция</p>
+                                    <p class="main__card-tagdiscount">10%</p>
+                                    <!-- <p class="main__card-tagsweet"></p> -->
+
+                                </div>
+                                <a href="#"><img src="/imgs/bouquet.png" alt=""></a>
+                            </div>
+                            <div class="main__card-info">
+                                <div class="main__card-desc"><p>Коробка из разных цветов "Название"</p></div>
+                                <div class="main__card-midsection">
+<p class="main__card-countlow">Мало</p><p class="main__card-points"><span>+280  </span>бонус</p>
+</div>
+                                <div class="main__card-bottom">
+                                    <div class="main__card-price">
+                                        <p class="main__card-newprice">24 000 ₸</p>
+                                        <p class="main__card-oldprice">28 000 ₸</p>
+                                    </div>
+                                   <button class="main__card-addcart"><img src="./icns/plus-icon.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__card">
+                            <div class="main__card-img">
+                                <button class="main__card-fav"></button>
+                                <div class="main__card-tags">
+                                    <p class="main__card-tagsweet">Вкусная цена</p>
+                                    <p class="main__card-tagdiscount">10%</p>
+                                    <!-- <p class="main__card-tagsweet"></p> -->
+
+                                </div>
+                                <a href="#"><img src="/imgs/bouquet.png" alt=""></a>
+                            </div>
+                            <div class="main__card-info">
+                                <div class="main__card-desc"><p>Коробка из разных цветов "Название"</p></div>
+                                <div class="main__card-midsection">
+<p class="main__card-counthigh">Много</p><p class="main__card-points"><span>+280  </span>бонус</p></div>
+                                <div class="main__card-bottom">
+                                    <div class="main__card-price">
+                                        <p class="main__card-newprice">24 000 ₸</p>
+                                        <p class="main__card-oldprice">28 000 ₸</p>
+                                    </div>
+                                   <button class="main__card-addcart"><img src="./icns/plus-icon.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__card">
+                            <div class="main__card-img">
+                                <button class="main__card-fav"></button>
+                                <div class="main__card-tags">
+                                    <p class="main__card-tagsweet">Вкусная цена</p>
+                                    <!-- <p class="main__card-tagsweet"></p> -->
+
+                                </div>
+                                <a href="#"><img src="/imgs/bouquet.png" alt=""></a>
+                            </div>
+                            <div class="main__card-info">
+                                <div class="main__card-desc"><p>Коробка из разных цветов "Название"</p></div>
+                                <div class="main__card-midsection">
+<p class="main__card-countmid">много</p><p class="main__card-points"><span>+280  </span>бонус</p>
+</div>
+                                <div class="main__card-bottom">
+                                    <div class="main__card-price">
+                                        <p class="main__card-newprice">24 000 ₸</p>
+                                        <p class="main__card-oldprice">28 000 ₸</p>
+                                    </div>
+                                   <button class="main__card-addcart"><img src="./icns/plus-icon.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__card">
+                            <div class="main__card-img">
+                                <button class="main__card-fav"></button>
+                                <div class="main__card-tags">
+                                    <p class="main__card-tagdiscount">Акция</p>
+                                    <p class="main__card-tagdiscount">10%</p>
+                                    <!-- <p class="main__card-tagsweet"></p> -->
+
+                                </div>
+                                <a href="#"><img src="/imgs/bouquet.png" alt=""></a>
+                            </div>
+                            <div class="main__card-info">
+                                <div class="main__card-desc"><p>Коробка из разных цветов "Название"</p></div>
+                                <div class="main__card-midsection">
+<p class="main__card-countlow">Мало</p><p class="main__card-points"><span>+280  </span>бонус</p>
+</div>
+                                <div class="main__card-bottom">
+                                    <div class="main__card-price">
+                                        <p class="main__card-newprice">24 000 ₸</p>
+                                        <p class="main__card-oldprice">28 000 ₸</p>
+                                    </div>
+                                   <button class="main__card-addcart"><img src="./icns/plus-icon.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__card">
+                            <div class="main__card-img">
+                                <button class="main__card-fav"></button>
+                                <div class="main__card-tags">
+                                    <p class="main__card-tagsweet">Вкусная цена</p>
+                                    <p class="main__card-tagdiscount">10%</p>
+                                    <!-- <p class="main__card-tagsweet"></p> -->
+
+                                </div>
+                                <a href="#"><img src="/imgs/bouquet.png" alt=""></a>
+                            </div>
+                            <div class="main__card-info">
+                                <div class="main__card-desc"><p>Коробка из разных цветов "Название"</p></div>
+                                <div class="main__card-midsection">
+<p class="main__card-counthigh">Много</p><p class="main__card-points"><span>+280  </span>бонус</p></div>
+                                <div class="main__card-bottom">
+                                    <div class="main__card-price">
+                                        <p class="main__card-newprice">24 000 ₸</p>
+                                        <p class="main__card-oldprice">28 000 ₸</p>
+                                    </div>
+                                   <button class="main__card-addcart"><img src="./icns/plus-icon.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__card">
+                            <div class="main__card-img">
+                                <button class="main__card-fav"></button>
+                                <div class="main__card-tags">
+                                    <p class="main__card-tagsweet">Вкусная цена</p>
+                                    <!-- <p class="main__card-tagsweet"></p> -->
+
+                                </div>
+                                <a href="#"><img src="/imgs/bouquet.png" alt=""></a>
+                            </div>
+                            <div class="main__card-info">
+                                <div class="main__card-desc"><p>Коробка из разных цветов "Название"</p></div>
+                                <div class="main__card-midsection">
+<p class="main__card-countmid">много</p><p class="main__card-points"><span>+280  </span>бонус</p>
+</div>
+                                <div class="main__card-bottom">
+                                    <div class="main__card-price">
+                                        <p class="main__card-newprice">24 000 ₸</p>
+                                        <p class="main__card-oldprice">28 000 ₸</p>
+                                    </div>
+                                   <button class="main__card-addcart"><img src="./icns/plus-icon.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__card">
+                            <div class="main__card-img">
+                                <button class="main__card-fav"></button>
+                                <div class="main__card-tags">
+                                    <p class="main__card-tagdiscount">Акция</p>
+                                    <p class="main__card-tagdiscount">10%</p>
+                                    <!-- <p class="main__card-tagsweet"></p> -->
+
+                                </div>
+                                <a href="#"><img src="/imgs/bouquet.png" alt=""></a>
+                            </div>
+                            <div class="main__card-info">
+                                <div class="main__card-desc"><p>Коробка из разных цветов "Название"</p></div>
+                                <div class="main__card-midsection">
+<p class="main__card-countlow">Мало</p><p class="main__card-points"><span>+280  </span>бонус</p>
+</div>
+                                <div class="main__card-bottom">
+                                    <div class="main__card-price">
+                                        <p class="main__card-newprice">24 000 ₸</p>
+                                        <p class="main__card-oldprice">28 000 ₸</p>
+                                    </div>
+                                   <button class="main__card-addcart"><img src="./icns/plus-icon.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__card">
+                            <div class="main__card-img">
+                                <button class="main__card-fav"></button>
+                                <div class="main__card-tags">
+                                    <p class="main__card-tagsweet">Вкусная цена</p>
+                                    <p class="main__card-tagdiscount">10%</p>
+                                    <!-- <p class="main__card-tagsweet"></p> -->
+
+                                </div>
+                                <a href="#"><img src="/imgs/bouquet.png" alt=""></a>
+                            </div>
+                            <div class="main__card-info">
+                                <div class="main__card-desc"><p>Коробка из разных цветов "Название"</p></div>
+                                <div class="main__card-midsection">
+<p class="main__card-counthigh">Много</p><p class="main__card-points"><span>+280  </span>бонус</p></div>
+                                <div class="main__card-bottom">
+                                    <div class="main__card-price">
+                                        <p class="main__card-newprice">24 000 ₸</p>
+                                        <p class="main__card-oldprice">28 000 ₸</p>
+                                    </div>
+                                   <button class="main__card-addcart"><img src="./icns/plus-icon.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__card">
+                            <div class="main__card-img">
+                                <button class="main__card-fav"></button>
+                                <div class="main__card-tags">
+                                    <p class="main__card-tagsweet">Вкусная цена</p>
+                                    <!-- <p class="main__card-tagsweet"></p> -->
+
+                                </div>
+                                <a href="#"><img src="/imgs/bouquet.png" alt=""></a>
+                            </div>
+                            <div class="main__card-info">
+                                <div class="main__card-desc"><p>Коробка из разных цветов "Название"</p></div>
+                                <div class="main__card-midsection">
+<p class="main__card-countmid">много</p><p class="main__card-points"><span>+280  </span>бонус</p>
+</div>
+                                <div class="main__card-bottom">
+                                    <div class="main__card-price">
+                                        <p class="main__card-newprice">24 000 ₸</p>
+                                        <p class="main__card-oldprice">28 000 ₸</p>
+                                    </div>
+                                   <button class="main__card-addcart"><img src="./icns/plus-icon.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__card">
+                            <div class="main__card-img">
+                                <button class="main__card-fav"></button>
+                                <div class="main__card-tags">
+                                    <p class="main__card-tagdiscount">Акция</p>
+                                    <p class="main__card-tagdiscount">10%</p>
+                                    <!-- <p class="main__card-tagsweet"></p> -->
+
+                                </div>
+                                <a href="#"><img src="/imgs/bouquet.png" alt=""></a>
+                            </div>
+                            <div class="main__card-info">
+                                <div class="main__card-desc"><p>Коробка из разных цветов "Название"</p></div>
+                                <div class="main__card-midsection">
+<p class="main__card-countlow">Мало</p><p class="main__card-points"><span>+280  </span>бонус</p>
+</div>
+                                <div class="main__card-bottom">
+                                    <div class="main__card-price">
+                                        <p class="main__card-newprice">24 000 ₸</p>
+                                        <p class="main__card-oldprice">28 000 ₸</p>
+                                    </div>
+                                   <button class="main__card-addcart"><img src="./icns/plus-icon.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cataloglist__pagination">
+                        <a href="#" class="cataloglist__pagination-ref cataloglist__pagination-active">1</a>
+                        <a href="#" class="cataloglist__pagination-ref">2</a>
+                        <a href="#" class="cataloglist__pagination-ref">3</a>
+                        <button type="button" class="cataloglist__pagination-btn">></button>
+                    </div>
+                    <button type="button" class="main__cards-more cataloglist__mobilemore">Показать больше</button>
+                </div>
+            </div>
+
+
+        </main>
+    </div>
+    <div class="container__mobilefooter mobilefooter">
+        <a href="#">
+            <div class="mobilefooter__item">
+                <div class="mobilefooter__item-img">
+                    <img src="./icns/catalog-icon.svg" alt="">
+                    <span></span>
+                </div>
+                <p class="mobilefooter__item-title">Каталог</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="mobilefooter__item">
+                <div class="mobilefooter__item-img">
+                    <img src="./icns/mobile-user.svg" alt="">
+                    <span></span>
+                </div>
+                <p class="mobilefooter__item-title">Профиль</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="mobilefooter__item">
+                <div class="mobilefooter__item-img">
+                    <img src="./icns/mobile-stock.svg" alt="">
+                    <span></span>
+                </div>
+                <p class="mobilefooter__item-title">Акции</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="mobilefooter__item">
+                <div class="mobilefooter__item-img">
+                    <img src="./icns/mobile-cart.svg" alt="">
+                    <span class="mobilefooter__item-number">2</span>
+                </div>
+                <p class="mobilefooter__item-title">Корзина</p>
+            </div>
+        </a>
+    </div>
+    <div class="container__footer">
+        <footer class="footer">
+            <div class="footer__logo">
+                <div class="footer__img">
+                    <img src="/imgs/logo-blue.png" alt="">
+                </div>
+                <p>2022 © Компания “TOO”. Все права защищены </p>
+            </div>
+            <div class="footer__refs">
+                <div class="footer__refs-item">
+                    <a href="#">Время доставки</a>
+                    <a href="#">Способы оплаты</a>
+                    <a href="#">Преимущества</a>
+                </div>
+                <div class="footer__refs-item">
+                    <a href="#">Корпоративным клиентам</a>
+                    <a href="#">Акции</a>
+                    <a href="#">Услуги</a>
+                </div>
+            </div>
+            <div class="footer__contacts">
+                <p>Контакты</p>
+                <div class="footer__contacts-socials">
+                    <a href="#"><img src="/icns/instagram.svg" alt=""></a>
+                    <a href="#"><img src="/icns/facebook.svg" alt=""></a>
+                    <a href="#"><img src="/icns/telega.svg" alt=""></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script
+    src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"
+    integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA="
+    crossorigin="anonymous"></script>
+    <!-- <script src="/app/js/product.js"></script> -->
+    <script src="/app/js/cataloglist.js"></script>
+    <script src="/app/js/script.js"></script>
+
+    <script>
+        $( function() {
+          $( "#slider-range" ).slider({
+            range: true,
+            min: 0,
+            max: 500,
+            values: [ 0, 500 ],
+            slide: function( event, ui ) {
+              $( "#amount1" ).val( ui.values[ 0 ] );
+              $( "#amount3" ).val( ui.values[ 0 ] );
+              $( "#amount2" ).val(   ui.values[ 1 ] );
+              $( "#amount4" ).val(   ui.values[ 1 ] );
+            }
+          });
+          $( "#amount1" ).val(  $( "#slider-range" ).slider( "values", 0 )  );
+          $( "#amount2" ).val(  $( "#slider-range" ).slider( "values", 1 ) );
+          $( "#amount3" ).val(  $( "#slider-range" ).slider( "values", 0 )  );
+          $( "#amount4" ).val(  $( "#slider-range" ).slider( "values", 1 ) );
+        } );
+        </script>
+</body>
+</html>

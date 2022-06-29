@@ -1,0 +1,310 @@
+.header{
+    &__burger,  &__mobilesearch{
+        display: none;
+    }
+    &__teleicon{
+        display: none;
+    }
+    &__top{
+        display: flex;
+        // height: 90px;
+        // gap: 2.9vw;
+        justify-content: space-between;
+        padding: 22px 0 20px;
+        position: relative;
+        &:after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #D7DADF;
+        }
+    }
+    &__search{
+        width: 100%;
+        max-width: 300px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+        input{
+            color: #A1A9B6;
+            &:active, &:focus{
+                outline: none;
+            }
+        }
+        &-bar{
+            width: 100%;
+            padding: 16px 14px;
+            border: none;
+            background-color: $input-gray;
+            border-radius: 50px;
+            height: 40px;
+            background-blend-mode: lighten  ;
+        }
+        &-btn{
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            right: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            outline: none;
+            border: none;
+            background: url("/icns/lupa.svg") no-repeat center;
+        }
+        &-close{
+            display: none;
+        }
+
+    }
+    &__city{
+        width: 100%;
+        display: flex;
+        cursor: pointer;
+        max-width: 82px;
+        align-items: center;
+        background: url("/icns/headerarrow-down.svg") no-repeat center right;
+        p{
+            color: $black;
+            line-height: $line16;
+        }
+    }
+    &__telephone{
+        display: flex;
+        align-items: center;
+        p{
+            color: $black;
+            line-height: $line16;
+        }
+
+    }
+    &__call{
+        display: flex;
+        align-items: center;
+        button{
+            padding: 15px 20px ;
+            background: linear-gradient(270deg, #FD4D7B 0.28%, #FEA9BD 100.28%);
+            border-radius: 50px;
+            color: $white;
+            border: none;
+            line-height: $line10;
+        }
+    }
+    &__authcart{
+        display: flex;
+        align-items: center;
+        gap: 1.6vw;
+    }
+    &__auth{
+        display: flex;
+        width: 13px;
+        height: 18px;
+        a{
+            width: 100%;
+            height: 100%;
+            background: url("/icns/auth.svg") no-repeat center;
+        }
+
+    }
+    &__cart{
+        display: flex;
+        width: 24px;
+        position: relative;
+        height: 19px;
+        a{
+            width: 100%;
+            height: 100%;
+            background: url("/icns/cart.svg") no-repeat center;
+        }
+        p{
+            position: absolute;
+            color: $white;
+            border-radius: 8px;
+            width: 14px;
+            height: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: $font10;
+            line-height: $line10;
+            font-weight: $weight700;
+            top: 0;
+            right: -3px;
+            background-color: $light-red;
+        }
+    }
+
+    &__bottom{
+        display: flex;
+        padding: 26px 0 23px;
+        position: relative;
+        // justify-content: space-between;
+        // gap: 3vw;
+    }
+    &__refs{
+        display: flex;
+        width: 100%;
+        gap: 3.5vw;
+        a{
+            color: $trueblack;
+            text-transform: uppercase;
+            line-height: $line20;
+            font-weight: $weight700;
+            text-decoration: none;
+            @media (min-width: 1025px) and (max-width: 1200px) {
+                font-size: 14px;
+            }
+            @media (min-width: 1200px) {
+                font-size: 16px;
+            }
+            &:hover{
+                color: #FD517E;
+            }
+        }
+    }
+    &__menu{
+        display: flex;
+        width: 40px;
+        // height: 40px;
+        background: url("/icns/header-menu.svg") no-repeat center;
+        // position: absolute;
+        // right: 13px;
+        // top: 16px;
+        &-picked{
+            background: url("/icns/cross.svg") no-repeat center, linear-gradient(0deg, #FD517E, #FD517E), #FFFFFF;
+
+            border-radius: 50px;
+        }
+    }
+
+}
+
+.mobile-header{
+    display: flex !important;
+    gap: 10px !important;
+    input{
+        height: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header{
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        &__top{
+            gap: 0;
+            justify-content: space-between;
+            align-items: center;
+
+            &::after{
+                width: 0;
+            }
+        }
+        &__bottom{
+            display: none;
+        }
+        &__city{
+            display: none;
+        }
+        &__authcart{
+            gap: 30px;
+        }
+        &__search{
+            max-width: calc(100% / 2.4);
+        }
+        &__telephone{
+            display: none;
+        }
+        &__call{
+            button{
+                display: none;
+            }
+        }
+        &__teleicon{
+            display: flex;
+            width: 24px;
+            height: 24px;
+            background: url("./../../icns/telephone.svg") center no-repeat;
+        }
+        &__burger{
+            display: flex;
+            background: url("./../../icns/burger.svg") center no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+@media (min-width: 450px) and (max-width: 1024px) {
+    .header{
+        padding: 0 calc(100% / 20);
+
+    }
+}
+@media (max-width: 450px) {
+    .header{
+        &__top{
+            padding: 29px 20px 20px !important;
+        }
+        &__search{
+            display: none;
+            &-close{
+                display: block;
+                background: url("./../../icns/black-cross.svg") no-repeat center;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                width: 24px;
+                height: 24px;
+            }
+        }
+        &__mobilesearch{
+            display: block;
+            background: url("./../../icns/lupa.svg") no-repeat center;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header{
+        &__city, &__telephone, &__authcart, &__bottom{
+            display: none;
+        }
+        &__search{
+          
+
+        }
+        
+        &__call{
+            button{
+                display: none;
+            }
+        }
+
+        &__top{
+            align-items: center;
+            justify-content: space-between;
+            padding: 29px 0px 20px;
+            &::after {
+                width: 0;
+                left: 0;
+            }
+        }
+
+        &__logo{
+            width: 150px;
+            height: 30px;
+            img{
+                width: 100%;
+                object-fit: contain;
+                height: 100%;
+            }
+        }
+    }
+}
