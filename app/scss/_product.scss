@@ -219,10 +219,10 @@
         width: 50px;
         height: 50px;
         border: 1px solid $pag-gray;
-        background: url("./../../icns/fav-icon.svg") no-repeat center;
+        background: url("../icns/fav-icon.svg") no-repeat center;
         background-size: 25px 22px;
         &:hover{
-            background:  url("./../../icns/fav-icon-hover.svg") no-repeat center;
+            background:  url("../icns/fav-icon-hover.svg") no-repeat center;
             background-size: 25px 22px;
         }
     }
@@ -534,8 +534,8 @@
                 position: relative;
                 &:after{
                     content: "";
-                    // mask-image: url("./../../icns/black-stroke.svg");
-                    background: url("./../../icns/black-stroke.svg") no-repeat center;
+                    // mask-image: url("../icns/black-stroke.svg");
+                    background: url("../icns/black-stroke.svg") no-repeat center;
                     width: 8px;
                     height: 5px;
                     position: absolute;

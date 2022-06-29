@@ -19,7 +19,7 @@ $(document).ready(function(){
             },
             450 : {
                 items: 2,
-                margin: 15,    
+                margin: 15,
             }
         }
     });
@@ -123,7 +123,7 @@ let mobileContainer = document.querySelectorAll(".mobilemenu__item-container")
 let burgerMenu = document.querySelector(".header__burger"), mobileMenu = document.querySelector(".container__mobilemenu")
 let body = document.body
 burgerMenu.addEventListener("click", ()=>{
-    mobileMenu.classList.contains("hidden") ? (mobileMenu.classList.remove("hidden"), burgerMenu.style.backgroundImage = "url('./../../icns/pink-cross.svg')", body.style.overflow = "hidden") : (mobileMenu.classList.add("hidden"), burgerMenu.style.backgroundImage = "url('./../../icns/burger.svg')", body.style.overflow = "auto")
+    mobileMenu.classList.contains("hidden") ? (mobileMenu.classList.remove("hidden"), burgerMenu.style.backgroundImage = "url('../icns/pink-cross.svg')", body.style.overflow = "hidden") : (mobileMenu.classList.add("hidden"), burgerMenu.style.backgroundImage = "url('../icns/burger.svg')", body.style.overflow = "auto")
 })
 mobileTitle.forEach(el=>{
     el.addEventListener("click", ()=>{
