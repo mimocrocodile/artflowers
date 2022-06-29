@@ -14,6 +14,9 @@ catalogBouquetContainer.addEventListener("click", (el)=>{
 let mainSortPicked = document.querySelector(".main__sort-picked")
 let mainSortContainer = document.querySelector(".main__sort-container")
 
+let mainSortPickedMob = document.querySelector(".main__sort-picked-mob")
+let mainSortContainerMob = document.querySelector(".main__sort-container-mob")
+
 
 mainSortPicked.addEventListener("click", ()=>{
     mainSortContainer.classList.contains("hidden") ? ( mainSortContainer.classList.remove("hidden"), document.documentElement.style.setProperty('--rotate', "180deg"))  :( mainSortContainer.classList.add("hidden"), document.documentElement.style.setProperty('--rotate', "0deg"))
@@ -23,6 +26,15 @@ mainSortContainer.addEventListener("click", (el)=>{
     mainSortPicked.innerHTML = el.target.innerHTML
     document.documentElement.style.setProperty('--rotate', "0deg")
     mainSortContainer.classList.add("hidden")
+})
+mainSortPickedMob.addEventListener("click", ()=>{
+    mainSortContainerMob.classList.contains("hidden") ? ( mainSortContainerMob.classList.remove("hidden"), document.documentElement.style.setProperty('--rotate', "180deg"))  :( mainSortContainerMob.classList.add("hidden"), document.documentElement.style.setProperty('--rotate', "0deg"))
+})
+
+mainSortContainerMob.addEventListener("click", (el)=>{
+    mainSortPickedMob.innerHTML = el.target.innerHTML
+    document.documentElement.style.setProperty('--rotate', "0deg")
+    mainSortContainerMob.classList.add("hidden")
 })
 
 let mobileFilter = document.querySelector(".cataloglist__mobilefilter"), filter = document.querySelector(".cataloglist__filter"),

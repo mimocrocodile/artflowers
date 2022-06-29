@@ -148,13 +148,25 @@
         <main class="main">
             <div class="main__top">
                 <p class="main__title">Розы</p>
-                <p class="main__breadcrumb">Главная > Цветы > Розы</p>
+                <div class="main__breadcontainer">
+                    <p class="main__breadcrumb">Главная > Цветы > Розы</p>
+                    <div class="main__sort desktop">
+                        <p class="main__sort-picked">По умолчанию</p>
+                        <div class="main__sort-container hidden">
+                            <p class="main__sort-item">По популярности</p>
+                            <p class="main__sort-item">По возрастанию цены</p>
+                            <p class="main__sort-item">По убыванию цены</p>
+                        </div>
+
+                    </div>
+                </div>
+
                 <div class="main__top-item">
 
                     <div class="main__bottom">
-                        <div class="main__sort">
-                            <p class="main__sort-picked">По умолчанию</p>
-                            <div class="main__sort-container hidden">
+                        <div class="main__sort mobile ">
+                            <p class="main__sort-picked main__sort-picked-mob">По умолчанию</p>
+                            <div class="main__sort-container main__sort-container-mob hidden">
                                 <p class="main__sort-item">По популярности</p>
                                 <p class="main__sort-item">По возрастанию цены</p>
                                 <p class="main__sort-item">По убыванию цены</p>
