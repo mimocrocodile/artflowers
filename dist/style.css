@@ -2062,6 +2062,10 @@
   outline: none;
 }
 
+.cataloglist__content .main__card {
+  flex: 1 1 25%;
+}
+
 .cataloglist #slider-range {
   border: 1px solid #ececec;
 }
